@@ -1,0 +1,156 @@
+@font-face {
+  font-family: helvetica_neue_bold;
+  src: url(../assets/fonts/helvetica_neue_bold.ttf);
+}
+
+@font-face {
+  font-family: helvetica_neue_light;
+  src: url(../assets/fonts/helvetica_neue_light.ttf);
+}
+
+@font-face {
+  font-family: helvetica_neue_roman;
+  src: url(../assets/fonts/helvetica_neue_roman.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  letter-spacing: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* HEADER ///////////////////////////*/
+#header {
+  font-family: helvetica_neue_light;
+  display: flex;
+  justify-content: space-between;
+  height: 160px;
+  width: 100%;
+}
+
+#headerLogo {
+  margin: 10px 0 0 50px;
+}
+
+#headerNav {
+  margin: 42px 63px 0 0;
+}
+/* space between nav links */
+#headerNav :nth-child(1) {
+  margin-right: 19px;
+}
+
+#headerNav a {
+  padding: 10px 16px;
+  color: #4d4d4d;
+  line-height: 36px;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 18px;
+  transition: 0.15s;
+}
+/* show border on a link hover */
+/* have not finished it yet */
+#headerNav a:hover {
+  border-bottom: 3px solid #4d4d4d;
+}
+
+/* main //////////////////////////*/
+#main {
+  height: calc(100vh - 160px);
+  width: 100%;
+  position: relative; /* xxxxxxx */
+  z-index: -1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#MainProductInfo {
+  margin: 177px 0 0 175px;
+}
+
+#MainProductInfo h1 {
+  font-family: helvetica_neue_bold;
+  font-size: 84px;
+  line-height: 1.08;
+  letter-spacing: normal;
+  color: #4d4d4d;
+  margin-bottom: 52px;
+  height: 112px;
+  width: 506px;
+}
+
+#MainProductInfo p {
+  width: 620px;
+  font-size: 24px;
+  font-family: helvetica_neue_light;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  margin: 0 0 55px 17px;
+  color: #4d4d4d;
+}
+
+#MainProductInfo p span {
+  font-style: italic;
+  color: #949090;
+}
+
+#MainProductInfo .addProduct {
+  width: 200px;
+  height: 72px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #4d4d4d;
+  margin-left: 17px;
+  cursor: pointer;
+}
+
+#MainProductImage {
+  margin: 9px 80px 0 166px;
+}
+
+/* products */
+#products_cection {
+  margin-top: 101px;
+}
+
+#products_cection ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#products_cection ul :nth-child(2) {
+  margin: 0 70px 0 70px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 480px;
+}
+
+.product h3 {
+  font-family: helvetica_neue_bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #4d4d4d;
+  margin-left: 23px;
+}
