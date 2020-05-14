@@ -1,0 +1,157 @@
+#main-content {
+  max-width: 79.1666666667%;
+  margin: 117px auto 0 auto;
+  height: max-content;
+}
+
+#top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 37px;
+}
+
+.topbar-right-text {
+  font-size: 18px;
+  color: #4d4d4d;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #d9d9d9;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn span {
+  /* height: 10px; */
+  /* width: 5px; */
+  margin-left: 31px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 44px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #4d4d4d;
+  padding: 14px 0 19px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+/* product cards */
+.card {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: solid 1px rgb(230, 227, 227);
+  overflow: hidden;
+}
+
+/* main image */
+.picture {
+  width: 181px;
+  margin-left: 3.22368421053%;
+  margin-right: 7.10526315789%;
+}
+
+.picture img {
+  width: 200px;
+  height: 200px;
+}
+
+/* name && description */
+.name-description {
+  width: 245px;
+  height: 250px;
+  min-width: min-content;
+  margin-right: 30.0657894737%;
+}
+
+.card h1 {
+  font-family: bold;
+  font-size: 32px;
+  color: #4d4d4d;
+  margin: 56px 0 16px 0;
+}
+
+.card p {
+  font-family: light;
+  font-size: 18px;
+  color: #4d4d4d;
+}
+
+.heartIcon {
+  margin: 147px 3.70394736842% 0 0;
+  cursor: pointer;
+}
+
+.cartIcon {
+  margin: 147px 6.57894736842% 0 0;
+  cursor: pointer;
+}
+
+.price-button > div {
+  margin: 57px 10px 39px 32px;
+  font-size: 24px;
+  color: #4d4d4d;
+  vertical-align: baseline;
+}
+
+.price-button > div p {
+  float: left;
+  margin-right: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.price-button button {
+  width: 180px;
+  height: 72px;
+  text-align: center;
+  font-size: 18px;
+  color: #4d4d4d;
+  background: #e4e2e2;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
