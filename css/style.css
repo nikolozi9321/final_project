@@ -56,6 +56,10 @@ button {
   margin: 10px 0 0 50px;
 }
 
+#header-logo2 {
+  display: none;
+}
+
 #headerNav {
   margin-right: 63px;
 }
@@ -123,7 +127,7 @@ button {
 
 #MainProductImage {
   background-repeat: no-repeat;
-  width: 100%;
+  /* width: 100%; */
   margin: 9px 4% 0 auto;
 }
 
@@ -410,18 +414,27 @@ button {
 }
 
 @media only screen and (max-width: 640px) {
+  #header-logo {
+    margin: 15px 0 0 12px;
+    display: none;
+  }
+
+  #header-logo2 {
+    display: block;
+  }
+
   #headerNav {
     display: none;
   }
 
   #MainProductInfo h1 {
     font-size: 1.25rem;
-    margin: 0 0 16px 0.9%;
+    margin: 0 0 16px 17px;
   }
 
   #MainProductInfo p {
     font-size: 0.75rem;
-    margin: 0 0 20px 1.25%;
+    margin: 0 0 20px 24px;
   }
 
   #MainProductInfo {
@@ -433,6 +446,9 @@ button {
     height: 54px;
     font-size: 0.8125rem;
     margin-left: calc((100% / 2) - 82px);
+  }
+  #MainProductImage {
+    margin: 0;
   }
 
   #MainProductImage img {
