@@ -11,7 +11,7 @@ function init() {
     buttons[i].addEventListener("click", function () {
       // get button ID
       let currentID = buttons[i].id;
-      // upload to localStorage for later use
+      // upload in localStorage for later use
       window.localStorage.setItem("ID", JSON.stringify(currentID));
       // On Click go to product.html file
       window.document.location = "./productPage.html";

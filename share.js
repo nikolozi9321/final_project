@@ -4,6 +4,9 @@ fetch("./assets/header.html")
   })
   .then((data) => {
     document.querySelector("header").innerHTML = data;
+  })
+  .catch((error) => {
+    console.log("Something went wrong with retrieving the data!");
   });
 
 fetch("./assets/footer.html")
@@ -12,4 +15,7 @@ fetch("./assets/footer.html")
   })
   .then((data) => {
     document.querySelector("footer").innerHTML = data;
+  })
+  .catch((error) => {
+    console.log("Something went wrong with retrieving the data!");
   });

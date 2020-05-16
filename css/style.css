@@ -28,7 +28,6 @@ body {
   width: 100%;
 }
 
-/* DESKTOP(1920px) FIRST LAYOUT :( */
 /* HEADER ///////////////////////////*/
 #header {
   font-family: helvetica_neue_light;
@@ -39,13 +38,14 @@ body {
   width: 100%;
 }
 
-#headerLogo {
+#header-logo {
   margin: 10px 0 0 50px;
 }
 
 #headerNav {
   margin-right: 63px;
 }
+
 /* space between nav links */
 #headerNav :nth-child(1) {
   margin-right: 19px;
@@ -58,6 +58,7 @@ body {
   font-size: 18px;
   transition: 0.15s;
 }
+
 /* show border on a link hover */
 /* have not finished it yet */
 #headerNav a:hover {
@@ -66,36 +67,32 @@ body {
 
 /* main //////////////////////////*/
 #main {
-  height: 100%;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
 #MainProductInfo {
-  margin: 9% 0 0 9%; /* 175px / 1920px(viewport width) * 100 */
+  margin: 9% 0 0 9%;
+  /* 175px / 1920px(viewport width) * 100 */
 }
 
 #MainProductInfo h1 {
   font-family: helvetica_neue_bold;
-  font-size: 84px;
-  line-height: 1.08;
-  letter-spacing: normal;
+  font-size: 4.375vw;
   color: #4d4d4d;
   margin-bottom: 52px;
-  height: 112px;
   width: auto;
-  max-width: 506px; /* 26% of main container */
+  max-width: 506px;
 }
 
 #MainProductInfo p {
   width: auto;
-  max-width: 620px; /* 33% of main container */
+  max-width: 620px;
   margin: 0 0 55px 17px;
   font-family: helvetica_neue_light;
-  font-size: 24px;
+  font-size: 1.25vw;
   line-height: 1.5;
   color: #4d4d4d;
 }
@@ -119,23 +116,27 @@ body {
 }
 
 #MainProductImage {
-  background-image: url("../assets/images/Rectangle 39.png");
   background-repeat: no-repeat;
-  width: 44%;
-  height: 100%;
+  width: 100%;
   margin: 9px 4% 0 auto;
 }
 
-/* products */
+#MainProductImage img {
+  width: 100%;
+  max-width: 52.875rem;
+  float: right;
+}
+
+/* products /////////////////////////////*/
 #products_cection {
   max-width: 82.2916666667%;
   margin: 101px auto 0 auto;
 }
 
 #products_cection ul {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -144,15 +145,18 @@ body {
   justify-content: space-around;
   align-items: center;
   max-width: 25%;
-  /* min-width: min-content; */
   min-width: max-content;
   /* intrinsic dimension(width of the box is calculated on the dimension of the contents that the box itself contains. */
   margin-bottom: 123px;
 }
 
-.product img {
-  height: 100%;
+.product div {
+  width: 50%;
+}
+
+.product div img {
   width: 100%;
+  /* max-width: fit-content; */
 }
 
 .product h3 {
@@ -162,14 +166,6 @@ body {
   color: #4d4d4d;
   margin-left: 23px;
 }
-
-/* @media screen and (max-width: 1367px) {
-  #MainProductImage {
-    background-image: url("../assets/images/Group 7@2x.png");
-    margin: 9px 4% 0 auto;
-    width: 20%;
-  }
-} */
 
 /* Section of best selling products */
 #bestSeller {
@@ -357,6 +353,7 @@ body {
 .footerList address {
   opacity: 0.4;
 }
+
 .footerList ul li a {
   font-size: 17px;
   color: #8f8d8d;
@@ -380,4 +377,37 @@ body {
 
 .button {
   cursor: pointer;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+  #MainProductInfo {
+    margin-top: 4.58333333333%;
+  }
+
+  #MainProductInfo h1 {
+    font-size: 48px;
+    margin-bottom: 22px;
+  }
+
+  #MainProductInfo p {
+    font-size: 20px;
+    margin-bottom: 32 px;
+  }
+
+  #MainProductInfo button {
+    width: 125px;
+    height: 48px;
+    font-size: 12px;
+  }
+
+  #MainProductImage img {
+    max-width: 430px;
+    margin-right: 1.92708333333%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #header {
+    display: none;
+  }
 }
