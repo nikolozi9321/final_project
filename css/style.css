@@ -501,6 +501,7 @@ button {
 
   #products_cection ul {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .product {
