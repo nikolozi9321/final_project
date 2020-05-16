@@ -145,6 +145,7 @@ button {
 #products_cection {
   max-width: 82.2916666667%;
   margin: 101px auto 0 auto;
+  margin-bottom: 63px;
 }
 
 #products_cection ul {
@@ -155,13 +156,14 @@ button {
 }
 
 .product {
+  max-width: 30rem;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  max-width: 25%;
-  min-width: max-content;
-  /* intrinsic dimension(width of the box is calculated on the dimension of the contents that the box itself contains. */
-  margin-bottom: 123px;
+  justify-content: center;
+  position: relative;
+  font-weight: normal;
+  font-size: 1.5rem;
+  width: calc(100% / 3);
 }
 
 .product div {
@@ -387,6 +389,7 @@ button {
 }
 
 @media only screen and (min-width: 641px) and (max-width: 1007px) {
+  /* main section */
   #MainProductInfo {
     margin-top: 4.58333333333%;
   }
@@ -411,9 +414,28 @@ button {
     max-width: 430px;
     margin-right: 1.92708333333%;
   }
+
+  /* products */
+  #products_cection {
+    max-width: 91.6666666667%;
+    margin: 55px auto 0 auto;
+  }
+
+  #products_cection ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product {
+  }
+
+  .product h3 {
+    font-size: 0.9375rem;
+  }
 }
 
 @media only screen and (max-width: 640px) {
+  /* header */
   #header-logo {
     margin: 15px 0 0 12px;
     display: none;
@@ -427,6 +449,7 @@ button {
     display: none;
   }
 
+  /* main product section */
   #MainProductInfo h1 {
     font-size: 1.25rem;
     margin: 0 0 16px 17px;
@@ -453,7 +476,7 @@ button {
 
   #MainProductImage img {
     width: 100%;
-    max-width: ;
+    max-width: fit-content;
     margin-bottom: 53px;
     float: none;
   }
@@ -468,5 +491,31 @@ button {
 
   #main {
     flex-direction: column-reverse;
+  }
+
+  /* products */
+  #products_cection {
+    max-width: 91.6666666667%;
+    margin: 55px auto 0 auto;
+  }
+
+  #products_cection ul {
+    flex-wrap: wrap;
+  }
+
+  .product {
+    font-size: 1.5rem;
+    width: 100%;
+    flex-flow: column;
+    margin-bottom: 8rem;
+  }
+
+  .product > div {
+    margin-bottom: 7px;
+  }
+
+  .product h3 {
+    font-size: 1rem;
+    margin: 0;
   }
 }
