@@ -75,11 +75,61 @@ button {
   font-size: 1.125rem;
   transition: 0.15s;
 }
+/* overlay navigation icon style */
+#overlayNavIcon {
+  display: none;
+  width: 24px;
+  height: 12px;
+  margin-right: 48px;
+  cursor: pointer;
+}
+
+#overlayNavIcon :nth-child(1) {
+  width: 16px;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+#overlayNavIcon :nth-child(2) {
+  width: 24px;
+  height: 2px;
+  background-color: black;
+}
 
 /* show border on a link hover */
 /* have not finished it yet */
 #headerNav a:hover {
   border-bottom: 3px solid #4d4d4d;
+}
+
+/* overlay content style */
+#overlay {
+  width: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #393939;
+  height: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 9999;
+}
+
+#close-icon {
+  position: absolute;
+  right: 25.6px;
+  top: 40px;
+}
+#close-icon:after {
+  display: inline-block;
+  content: "\00d7"; /* This will render the 'X' */
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* main //////////////////////////*/
@@ -426,16 +476,19 @@ button {
     justify-content: center;
   }
 
-  .product {
-  }
-
   .product h3 {
     font-size: 0.9375rem;
   }
+
+  /* best selling products */
 }
 
 @media only screen and (max-width: 640px) {
   /* header */
+  #overlayNavIcon {
+    display: block;
+  }
+
   #header-logo {
     margin: 15px 0 0 12px;
     display: none;
@@ -519,4 +572,6 @@ button {
     font-size: 1rem;
     margin: 0;
   }
+
+  /* best selling products */
 }
