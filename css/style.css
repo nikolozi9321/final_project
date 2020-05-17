@@ -585,6 +585,10 @@ button {
   }
 
   /* best selling products */
+  .BSProduct {
+    width: 100%;
+  }
+
   .BSProduct h4 {
     margin-bottom: 8px;
     font-size: 1rem;
