@@ -23,7 +23,7 @@ function init() {
   for (let i = 0; i < products.length; i++) {
     // check if gotten ID match, ID properties in objects
     if (products[i].id === id) {
-      // document.getElementById("ProductImage")
+      document.getElementById("image").src = products[i].image2x;
       document.getElementById("productName").textContent = products[i].name;
       document.getElementById("price").textContent = products[i].price;
       document.getElementById("productDescription").textContent =
@@ -36,6 +36,8 @@ function init() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  init();
-});
+init();
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   init();
+// });

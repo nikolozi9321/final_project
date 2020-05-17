@@ -1,42 +1,49 @@
 [{
   "id": "p_0",
   "image": "/assets/images/Group 7.png",
+  "image2x": "/assets/images/Rectangle 39.png",
   "name": "Beoplay H9i- ის ლიმიტირებული ექსკლუზიური გამოცემა",
   "price": "300",
   "description": "სპეციალური გამოცემა RIMOWA x Bang & Olufsen Beoplay H9i ყურსასმენები, რომლებიც მოთავსებულია  RIMOWA-ს ხელმოწერით. "
 }, {
   "id": "p_1",
   "image": "/assets/images/Group 9.png",
+  "image2x": "/assets/images/Group 9@2x.png",
   "name": "სანათი",
   "price": "150",
   "description": "უმაღლესი ხარისხის სანათი"
 }, {
   "id": "p_2",
   "image": "/assets/images/Group 11.png",
+  "image2x": "/assets/images/Group 11@2x.png",
   "name": "დინამიკი",
   "price": "190",
   "description": "უმაღლესი ხარისხის დინამიკი"
 }, {
   "id": "p_3",
   "image": "/assets/images/Rectangle 18.png",
+  "image2x": "/assets/images/Rectangle 18@2x.png",
   "name": "ყურსასმენი",
   "price": "999999",
   "description": "უმაღლესი ხარისხის ყურსასმენი"
 }, {
   "id": "p_4",
   "image": "/assets/images/Rectangle 21.png",
+  "image2x": "/assets/images/Rectangle 21@2x.png",
   "name": "სტერეო",
   "price": "70",
   "description": "უმაღლესი ხარისხის სანათი"
 }, {
   "id": "p_5",
   "image": "/assets/images/Group 17.png",
+  "image2x": "/assets/images/Group 17@2x.png",
   "name": "სმარტ დინამიკი",
   "price": "520",
   "description": "უმაღლესი ხარისხის სმარტ დინამიკი"
 }, {
   "id": "p_6",
   "image": "/assets/images/Group 19.png",
+  "image2x": "/assets/images/Group 19@2x.png",
   "name": "ტელევიზორი",
   "price": "360",
   "description": "უმაღლესი ხარისხის ტელევიზორი"

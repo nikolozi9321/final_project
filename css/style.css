@@ -124,6 +124,7 @@ button {
   right: 25.6px;
   top: 40px;
 }
+
 #close-icon:after {
   display: inline-block;
   content: "\00d7"; /* This will render the 'X' */
@@ -376,6 +377,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 51px;
+  font-family: helvetica_neue_light;
 }
 
 .footer-logo {
@@ -416,6 +418,7 @@ footer {
   max-width: 111px;
   line-height: 24px;
   margin-top: 9px;
+  opacity: 0.6;
 }
 
 .contacts ul :nth-child(1) {
@@ -648,7 +651,6 @@ footer {
   }
 
   #lower-section-contacts {
-    line-height: normal;
     display: block;
     margin-top: 24px;
   }
@@ -660,7 +662,18 @@ footer {
   #lower-section-contacts ul :nth-child(2) {
     font-size: 0.75rem;
   }
-  #lower-section-contacts ul address {
-    line-height: normal;
+
+  .lower-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lower-section nav {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .lower-section nav a {
+    margin-bottom: 26px;
   }
 }
