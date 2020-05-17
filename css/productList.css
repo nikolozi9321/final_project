@@ -27,8 +27,6 @@
 }
 
 .dropbtn span {
-  /* height: 10px; */
-  /* width: 5px; */
   margin-left: 31px;
 }
 
@@ -83,7 +81,7 @@
   margin-bottom: 30px;
   border-radius: 10px;
   border: solid 1px rgb(230, 227, 227);
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* main image */
@@ -95,63 +93,208 @@
 
 .picture img {
   width: 200px;
-  height: 200px;
+  height: 100%;
 }
 
 /* name && description */
 .name-description {
-  width: 245px;
-  height: 250px;
-  min-width: min-content;
-  margin-right: 30.0657894737%;
+  width: 100%;
+  max-width: 245px;
+  height: 100%;
+  margin-right: auto;
 }
 
 .card h1 {
-  font-family: bold;
-  font-size: 32px;
-  color: #4d4d4d;
+  font-size: 2rem;
+  color: rgb(105, 105, 105);
   margin: 56px 0 16px 0;
 }
 
-.card p {
-  font-family: light;
-  font-size: 18px;
+.name-description p {
+  font-family: helvetica_neue_light;
+  font-size: 1.125rem;
   color: #4d4d4d;
 }
 
-.heartIcon {
-  margin: 147px 3.70394736842% 0 0;
-  cursor: pointer;
-}
-
+.heartIcon,
 .cartIcon {
-  margin: 147px 6.57894736842% 0 0;
+  width: 36.8px;
+  height: 33.3px;
+  margin: auto 53px 69.4px 0;
   cursor: pointer;
 }
 
+.price-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 100%;
+  margin-left: 47px;
+}
 .price-button > div {
-  margin: 57px 10px 39px 32px;
-  font-size: 24px;
+  margin: auto auto 39px 0;
+  font-size: 1.5rem;
   color: #4d4d4d;
-  vertical-align: baseline;
+  align-items: center;
 }
 
 .price-button > div p {
   float: left;
-  margin-right: 5px;
-  text-align: center;
-  font-size: 30px;
+  margin-right: 10px;
+  font-size: 1.875rem;
   font-style: italic;
 }
 
 .price-button button {
   width: 180px;
   height: 72px;
-  text-align: center;
-  font-size: 18px;
-  color: #4d4d4d;
+  font-size: 1.125rem;
   background: #e4e2e2;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  margin: 0 62px 50px 0;
+}
+
+.card-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightlabel {
+  height: 100%;
+  display: flex;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+  #main-content {
+    max-width: 89.5833333333%;
+  }
+
+  .card {
+    margin-bottom: 16px;
+    max-height: 130px;
+  }
+
+  .card h1 {
+    font-size: 1.125rem;
+    margin: 28px 0 7px 0;
+  }
+
+  .name-description p {
+    font-size: 0.75rem;
+  }
+
+  .picture {
+    margin: 0;
+    margin-left: 2.56578947368%;
+  }
+
+  .picture img {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .price-button > div {
+    font-size: 0.9375rem;
+    margin-bottom: 0px;
+  }
+
+  .price-button > div p {
+    font-size: 1.5rem;
+  }
+
+  .heartIcon,
+  .cartIcon {
+    width: 19.2px;
+    height: 17.3px;
+    margin: auto 30px 38px 0;
+  }
+
+  .price-button {
+    margin-left: 22px;
+  }
+
+  .price-button button {
+    width: 100px;
+    height: 40px;
+    font-size: 0.6875rem;
+    margin: 0 24px 20px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #main-content {
+    max-width: 97.5%;
+  }
+
+  .card {
+    margin-bottom: 12px;
+    max-height: 159px;
+    justify-content: space-around;
+  }
+
+  .card h1 {
+    font-size: 0.9375rem;
+    margin: 17px 0 2px 0;
+  }
+
+  .name-description p {
+    font-size: 0.6875rem;
+    margin-bottom: auto;
+  }
+
+  .picture {
+    margin: 0;
+    margin-left: 2.56578947368%;
+  }
+
+  .picture img {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .price-button {
+    margin-left: 0;
+  }
+
+  .price-button > div {
+    font-size: 0.8125rem;
+    margin-bottom: 0px;
+  }
+
+  .price-button > div p {
+    font-size: 0.8125rem;
+    margin-bottom: 10px;
+  }
+
+  .heartIcon,
+  .cartIcon {
+    width: 16.4px;
+    height: 14.8px;
+    margin: auto 23.2px 28.7px 0;
+  }
+
+  .price-button button {
+    width: 100px;
+    height: 40px;
+    font-size: 0.6875rem;
+    margin: 0 24px 20px 0;
+  }
+
+  .price-button {
+    float: right;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+    width: auto;
+  }
 }

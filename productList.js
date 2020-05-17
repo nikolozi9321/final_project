@@ -50,6 +50,12 @@ function init() {
     let name = document.createElement("h1");
     let price = document.createElement("p");
     let description = document.createElement("p");
+    // right label div
+    let rightlabel = document.createElement("div");
+    rightlabel.className = "rightlabel";
+    // wrapper div
+    let wrapper = document.createElement("div");
+    wrapper.className = "card-wrapper";
 
     // main image holder div
     let div0 = document.createElement("div");
@@ -137,11 +143,13 @@ function init() {
     divprice.appendChild(span);
     div2.appendChild(divprice);
     div2.appendChild(button);
+    rightlabel.appendChild(heartIcon);
+    rightlabel.appendChild(cartIcon);
+    rightlabel.appendChild(div2);
+    wrapper.appendChild(div1);
+    wrapper.appendChild(rightlabel);
     card.appendChild(div0);
-    card.appendChild(div1);
-    card.appendChild(heartIcon);
-    card.appendChild(cartIcon);
-    card.appendChild(div2);
+    card.appendChild(wrapper);
     container.append(card);
   }
 }
