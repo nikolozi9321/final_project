@@ -81,7 +81,7 @@
   margin-bottom: 30px;
   border-radius: 10px;
   border: solid 1px rgb(230, 227, 227);
-  overflow: auto;
+  overflow: hidden;
 }
 
 /* main image */
@@ -184,6 +184,14 @@
     margin: 28px 0 7px 0;
   }
 
+  .topbar-right-text {
+    font-size: 0.8125rem;
+  }
+
+  .dropbtn {
+    font-size: 0.75rem;
+  }
+
   .name-description p {
     font-size: 0.75rem;
   }
@@ -231,6 +239,21 @@
 @media only screen and (max-width: 640px) {
   #main-content {
     max-width: 97.5%;
+  }
+
+  #top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 47px;
+  }
+
+  .dropdown {
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+  }
+
+  .topbar-right-text {
+    font-size: 0.75rem;
   }
 
   .card {
