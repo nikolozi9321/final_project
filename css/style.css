@@ -140,7 +140,7 @@ button {
   flex-direction: column;
   position: relative;
   top: 164px;
-  right: 4.53125%;
+  /* right: 4.53125%; */
 }
 
 #main-nav :nth-child(1) {
