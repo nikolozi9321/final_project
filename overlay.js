@@ -3,12 +3,16 @@ document.addEventListener("click", function () {
   document.getElementById("overlayNavIcon").onclick = openOverlay;
   // close overlay on another click
   if (document.getElementById("overlay").style.width == "78%") {
-    document.getElementById("burger-menu").onclick = closeOverlay;
+    document.getElementById("close-icon").onclick = closeOverlay;
   }
+  document.getElementById("contacts").onclick = closeOverlay;
 });
 
 // Open Overlay func
 function openOverlay() {
+  document.getElementById("products").addEventListener("click", function () {
+    window.document.location = "./productList.html";
+  });
   // set width to 100% to show up overlay
   document.getElementById("overlay").style.width = "78%";
   // disable scrolling

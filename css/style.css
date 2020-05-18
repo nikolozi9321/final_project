@@ -108,8 +108,10 @@ button {
 #overlay {
   width: 0px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   background-color: #393939;
+  align-items: center;
+  justify-content: flex-end;
   height: 100%;
   right: 0;
   top: 0;
@@ -121,7 +123,7 @@ button {
 
 #close-icon {
   position: absolute;
-  right: 25.6px;
+  right: 45px;
   top: 40px;
 }
 
@@ -131,6 +133,23 @@ button {
   font-size: 30px;
   color: #fff;
   cursor: pointer;
+}
+
+#main-nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 164px;
+}
+
+#main-nav :nth-child(1) {
+  margin-bottom: 49px;
+}
+
+#main-nav a {
+  font-size: 0.9375rem;
+  color: #fff;
+  line-height: 36px;
 }
 
 /* main //////////////////////////*/
