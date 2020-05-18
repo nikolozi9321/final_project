@@ -96,24 +96,29 @@ button {
   background-color: black;
 }
 
+#headerNav {
+  position: relative;
+}
+
 /* show border on a link hover */
 #headerNav :nth-child(1):hover::after {
   content: "";
-  display: block;
   position: absolute;
-  width: 50px;
-  border: 2px solid #4d4d4d;
-  margin-top: 5px;
+  left: 0;
+  bottom: -7px;
+  height: 15px;
+  width: 20%;
+  border-bottom: 5px solid #4d4d4d;
 }
 
 #headerNav :nth-child(2):hover::after {
   content: "";
-  display: block;
   position: absolute;
-  width: 50px;
-  border: 2px solid #4d4d4d;
-  margin-top: 5px;
-  margin-left: 145px;
+  left: 140px;
+  bottom: -7px;
+  height: 15px;
+  width: 20%;
+  border-bottom: 5px solid #4d4d4d;
 }
 
 /* overlay content style */
