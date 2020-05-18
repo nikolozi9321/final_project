@@ -140,6 +140,7 @@ button {
   flex-direction: column;
   position: relative;
   top: 164px;
+  right: 87px;
 }
 
 #main-nav :nth-child(1) {
@@ -150,6 +151,26 @@ button {
   font-size: 0.9375rem;
   color: #fff;
   line-height: 36px;
+}
+
+#main-nav :nth-child(1):hover::after {
+  content: "";
+  position: absolute;
+  left: -70px;
+  top: 21px;
+  width: 48px;
+  height: 2px;
+  background: #fff;
+}
+
+#main-nav :nth-child(2):hover::after {
+  content: "";
+  position: absolute;
+  left: -70px;
+  top: 103px;
+  width: 48px;
+  height: 2px;
+  background: #fff;
 }
 
 /* main //////////////////////////*/
